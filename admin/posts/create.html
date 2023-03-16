@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add posts</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/admin.css">
+    <link rel="stylesheet" href="../../style.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href="/open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="../../pocetna.html"><img src="../../logo.png" alt=""></a>
+        </div>
+
+    </nav>
+
+    <div class="admin-wrapper">
+        <div class="left-sidebar">
+            <ul>
+                <li><a href="index.html">Manage Posts</a></li>
+                <li><a href="../users/index.html">Manage Users</a></li>
+                <li><a href="../topics/index.html">Manage Topics</a></li>
+            </ul>
+        </div>
+         
+        <div class="admin-content">
+            <div class="button-group">
+                <a href="create.html" class="btn btn-primary btn-md" id="btn">Add post</a>
+                <a href="index.html" class="btn btn-primary btn-md" id="btn">Manage posts</a>
+            </div>
+
+            <div class="content">
+                <h2 class="page-title">Add Posts</h2>
+
+                <form action="create.html" method="POST">
+                    <div>
+                        <label>Title</label>
+                        <input type="text" name="title" class="text-input">
+                    </div>
+                    <div>
+                        <label>Body</label>
+                        <textarea name="body" id="body"></textarea>
+                    </div>
+                    <div>
+                        <label>Image</label>
+                        <input type="file" name="image" class="text-input">
+                    </div>
+                    <div>
+                        <label>Topic</label>
+                        <select name="topic" class="text-input">
+                            <option value="Poetry">Poetry</option>
+                            <option value="Life lessons">Life lessons</option>
+                        </select>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-primary btn-md" id="btn">Save post</button>
+                    </div>
+                </form>
+               
+            </div>
+            
+        </div>
+    </div>
+     
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/19.0.0/classic/ckeditor.js"></script>
+    <script src="../../js.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uclani se</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href="/open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="pocetna.html"><img src="logo.png" alt=""></a>
+        </div>
+        <ul class="links">
+            <li><a href="pocetna.html">Početna</a></li>
+            <li><a href="Onama.html">O nama</a></li>
+            <li><a href="#">Učlani se</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <span class="rafting"><li><a href="rafting.html"><button class="rafBtn"><span>RAFTING</span></button></a></li></span>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <div class="page-wrapper">
+        <div class="backgroundUclani"><p><span style="background-color:  rgba(255, 255, 255, 0.274);">UČLANI SE</span></p> </div>
+        <hr/>
+        <div class="uvod2" class="container">
+            <p>U samo par koraka postani i ti član Skijaskog kluba "RIS". <br> Unesite svoje podatke koji uključuju datum rodjenja, adresu stanovanja</p>
+            <a href="#dole"><span id="strelica" class="fas fa-arrow-down" ></span></a>        
+        </div>
+        
+        <div class="formDiv" >
+            <form action="index.php" class="forma" method="POST"><br>
+                <input type="text" name="Ime" placeholder="Ime i prezime" ><br>
+                <input type="text" name="Email" placeholder="E-mail" ><br>
+                <textarea name="Podaci" placeholder="Vaši podaci" ></textarea><br>
+                <button  id="btn" class="btn btn-primary btn-md" type="submit" name="posalji">POŠALJI</button>
+            </form>
+        </div>
+        
+    </div>
+    <footer class="futer">
+        <p> &copy;2020 Ski klub RIS</p>
+        <div class="futmedia">
+            <a href="https://www.facebook.com/risbanjaluka/"><i id="ikonca" class="fa fa-facebook" ></i></a>
+            <a  href="https://www.instagram.com/skiklubris/"><i id="ikonca" class="fa fa-instagram" ></i></a>
+            <a  href="https://www.youtube.com/channel/UCNjEzKKIDd3w4PRfMvB5oLw"><i id="ikonca" class="fa fa-youtube"></i></a>
+        </div>
+    
+    </footer>
+    <div id="dole"></div>
+    <script src="navbar.js"></script>
+</body>
+</html>
